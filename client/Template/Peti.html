@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO 3</title>
+
+    <link rel='stylesheet' type='text/css'  href='{% static "css/Peti.css" %}'>
+    <script src="{% static 'js/Peticiones.js' %}"></script>
+ </head>
+ <body>
+    <h1>Peticiones</h1>
+    <h2 id = 'tit'>Detalle de mensajes por usuario</h2>
+    <button id="op1" onclick="GetTablas('MensajesUsuarios')" type="button">Todos</button>
+    <button id="op2" onclick="ObtenerUsuario('FiltroUsuarios','usuarios')" type="button">Filtrar Usuarios</button>
+    <input id ='usuarios' placeholder  ='ingrese el usuario a filtrar . . .' type="text" >
+    
+    <button id="op3" onclick="ObtenerUsuario('FiltroFechas','Fechas')" type="button">Filtrar Fechas</button>
+    <input id ='Fechas' placeholder  ='ingrese una fecha dd/mm/yyyy a filtrar . . .' type="text" >
+    
+    <h2 id = 'tit1'>Resumen de pesos por usuario</h2>
+    <button id="op4" onclick="GetTablas('GetPesos')" type="button">Todos</button>
+
+    <button id="op5" onclick="ObtenerUsuario('PesosUsuarios','usuarios1')" type="button">Filtrar Usuarios</button>
+    <input id ='usuarios1' placeholder  ='ingrese el usuario a filtrar . . .' type="text" >
+    
+    <button id="op6" onclick="OP1('Mensajes','op6')" type="button">solicitudes de creación de mensajes</button>
+    <button id="op7" onclick="regresar()" type="button">Regresar</button>
+
+    <div id = "Tablas"></div> 
+ </body>
+</html>

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css'  href='{% static "css/Solicitar servicio.css" %}'>
+    <script src="{% static 'js/servicios.js' %}"></script>
+    <title>PROYECTO 3</title>
+</head>
+ <body>
+    <h1>Servicios</h1>
+    <label id="config">Configuración</label>
+    <input type="file" id="op1" onchange="leerArchivo('op1')">
+
+    <label id="Msj">Mensajes</label>
+    <input type="file" id="op2" onchange="leerArchivo('op2')">
+
+    <button id="op3" onclick="Op3()" type="button">Regresar</button>
+    
+ </body>
+</html>

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO 3</title>
+
+    <link rel='stylesheet' type='text/css'  href='{% static "css/home.css" %}'>
+    <script src="{% static 'js/home.js' %}">
+
+    </script>
+ </head>
+ <body>
+    <h1>ChapinChat</h1>
+    <button id="op1" onclick="OP1('SolicitarServicio','op1')" type="button">Solicitar servicio</button>
+    <button id="op2" onclick="OP1('Peticiones','op2')" type="button">Peticiones</button>
+    <a id="op3" href="Documents\Ensayo.pdf">Ayuda</a>
+    <button id="op4" onclick="Del()" type="button">Opción Reset</button>
+    
+ </body>
+</html>
